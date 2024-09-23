@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import Footer from './Footer'
 
 const Sidebar = ({user}: SiderbarProps) => {
 
@@ -14,7 +15,7 @@ const Sidebar = ({user}: SiderbarProps) => {
         <nav className='flex flex-col gap-4'>
             <Link href='/' className='mb-12 cursor-pointer flex items-center gap-2'>
                 <Image 
-                    src='/icons/logo.svg'
+                    src='/icons/logo.png'
                     width={34}
                     height={34}
                     alt='SeateaInc logo'
@@ -50,7 +51,7 @@ const Sidebar = ({user}: SiderbarProps) => {
         USER
     </nav>
 
-    FOOTER
+    <Footer user={user} />
     </section>
   )
 }

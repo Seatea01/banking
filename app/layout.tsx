@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Seatea",
   description: "SeateaInc is a modern bank that puts all your banks in one place.",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/icons/logo.png'
   }
 };
 
