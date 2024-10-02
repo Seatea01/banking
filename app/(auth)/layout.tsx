@@ -1,4 +1,12 @@
 import Image from "next/image";
+import Carousel from "@/components/Carousel";
+
+
+  const images = [
+   '/icons/auth-image.png',
+  '/icons/auth-img-2.png',
+  '/icons/auth-img-3.png',
+  ];
 
 export default function RootLayout({
     children,
@@ -9,13 +17,10 @@ export default function RootLayout({
       <main className="flex min-h-screen w-full justify-between font-inter">
           {children}
           <div className="auth-asset">
+          <Carousel images={images} />
+           
             <div className="">
-              <Image 
-              src='icons/auth-image.svg' 
-              alt='Auth image'
-              width={500}
-              height={500}
-              />
+             
             </div>
           </div>
       </main>
