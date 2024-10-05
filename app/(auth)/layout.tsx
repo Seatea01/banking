@@ -3,9 +3,10 @@ import Carousel from "@/components/Carousel";
 
 
   const images = [
-   '/icons/auth-image.png',
+ 
   '/icons/auth-img-2.png',
   '/icons/auth-img-3.png',
+  '/icons/auth-img-4.png',
   ];
 
 export default function RootLayout({
